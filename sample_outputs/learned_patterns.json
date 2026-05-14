@@ -1,0 +1,31 @@
+{
+  "description": "Patterns extracted after 3 simulated operator edit cycles on case_summary drafts.",
+  "extraction_timestamp": "2026-05-14T18:00:00Z",
+  "draft_type": "case_summary",
+  "patterns": [
+    {
+      "pattern_type": "terminology",
+      "description": "Replace 'claimant' with 'plaintiff' consistently",
+      "frequency": 3,
+      "example_before": "claimant",
+      "example_after": "plaintiff",
+      "prompt_directive": "Always use the term 'plaintiff' instead of 'claimant' when referring to the party initiating legal action."
+    },
+    {
+      "pattern_type": "addition",
+      "description": "Always append privilege disclaimer at end of draft",
+      "frequency": 3,
+      "example_before": null,
+      "example_after": "PRIVILEGED ATTORNEY WORK PRODUCT.",
+      "prompt_directive": "Always append the following footer to all case summaries: 'PRIVILEGED ATTORNEY WORK PRODUCT.'"
+    }
+  ],
+  "improvement_metrics": {
+    "total_edits": 3,
+    "patterns_learned": 2,
+    "avg_change_ratio": 0.187,
+    "edit_distance_trend": "decreasing",
+    "note": "As patterns are injected into prompts, the edit_distance_ratio should decrease over subsequent drafts, indicating the system is generating closer to operator expectations."
+  },
+  "injected_feedback_instructions": "STYLE PREFERENCES (learned from operator edits):\n- Always use the term 'plaintiff' instead of 'claimant' when referring to the party initiating legal action.\n- Always append the following footer to all case summaries: 'PRIVILEGED ATTORNEY WORK PRODUCT.'"
+}

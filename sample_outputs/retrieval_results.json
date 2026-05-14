@@ -1,0 +1,48 @@
+{
+  "description": "Example semantic search results from GET /api/retrieve?query=purchase+price+and+closing+date&n=5",
+  "query": "purchase price and closing date",
+  "count": 5,
+  "results": [
+    {
+      "rank": 1,
+      "doc_id": "contract_draft",
+      "page": 1,
+      "section": "SECTION 1: PURCHASE PRICE AND PAYMENT",
+      "similarity": 0.9102,
+      "text": "The total purchase price for the Property shall be Three Million Five Hundred Thousand Dollars ($3,500,000.00). Within five (5) business days after the Effective Date, Buyer shall deposit the sum of One Hundred Seventy-Five Thousand Dollars ($175,000.00) with First National Escrow Company."
+    },
+    {
+      "rank": 2,
+      "doc_id": "contract_draft",
+      "page": 2,
+      "section": "SECTION 4: CLOSING",
+      "similarity": 0.8871,
+      "text": "The closing of the purchase and sale contemplated hereby shall take place on or before March 15, 2024, at the offices of the Escrow Agent, unless the parties mutually agree in writing to an extension."
+    },
+    {
+      "rank": 3,
+      "doc_id": "settlement_memo",
+      "page": 1,
+      "section": "SETTLEMENT TERMS",
+      "similarity": 0.7643,
+      "text": "The parties agree to a total settlement amount of $850,000.00, payable in three installments as outlined in Schedule A."
+    },
+    {
+      "rank": 4,
+      "doc_id": "contract_draft",
+      "page": 2,
+      "section": "SECTION 4: CLOSING",
+      "similarity": 0.7418,
+      "text": "Seller shall pay for the title insurance premium, transfer taxes, and Seller's attorney fees. Buyer shall pay for recording fees, lender's title insurance, and Buyer's attorney fees."
+    },
+    {
+      "rank": 5,
+      "doc_id": "court_filing",
+      "page": 1,
+      "section": "PRAYER FOR RELIEF",
+      "similarity": 0.6832,
+      "text": "Plaintiff demands judgment against Defendant in the amount of $125,000 plus interest, costs, and attorney fees as allowed by law."
+    }
+  ],
+  "note": "Each result carries full provenance (doc_id, page, section) enabling inspectable evidence traceability — a core grounding requirement of the system."
+}

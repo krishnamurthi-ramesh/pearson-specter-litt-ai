@@ -1,0 +1,94 @@
+{
+  "doc_id": "contract_draft",
+  "filename": "contract_draft.txt",
+  "file_type": "text",
+  "ocr_used": false,
+  "confidence": 1.0,
+  "quality_score": 0.814,
+  "text_length": 4988,
+  "num_sections": 12,
+  "structured_data": {
+    "dates": [
+      "January 15, 2024",
+      "March 15, 2024"
+    ],
+    "case_numbers": [
+      "2024-CV-03892"
+    ],
+    "parties": [
+      "Greenfield Properties LLC, a Delaware limited liability company",
+      "Harborview Capital Partners Inc., a New York corporation"
+    ],
+    "amounts": [
+      "$3,500,000.00",
+      "$175,000.00"
+    ],
+    "document_type": "contract",
+    "key_phrases": [
+      "AGREEMENT OF PURCHASE AND SALE",
+      "RECITALS",
+      "WHEREAS",
+      "THEREFORE",
+      "SECTION ",
+      "PURCHASE PRICE AND PAYMENT",
+      "DUE DILIGENCE PERIOD",
+      "REPRESENTATIONS AND WARRANTIES",
+      "CLOSING",
+      "DEFAULT AND REMEDIES",
+      "MISCELLANEOUS",
+      "IN WITNESS WHEREOF",
+      "GREENFIELD PROPERTIES LLC ",
+      "HARBORVIEW CAPITAL PARTNERS INC"
+    ]
+  },
+  "sections": [
+    {
+      "title": "AGREEMENT OF PURCHASE AND SALE",
+      "length": 411
+    },
+    {
+      "title": "RECITALS",
+      "length": 0
+    },
+    {
+      "title": "WHEREAS",
+      "length": 158
+    },
+    {
+      "title": "WHEREAS",
+      "length": 381
+    },
+    {
+      "title": "SECTION 1",
+      "length": 637
+    },
+    {
+      "title": "SECTION 2",
+      "length": 888
+    },
+    {
+      "title": "SECTION 3",
+      "length": 794
+    },
+    {
+      "title": "SECTION 4",
+      "length": 446
+    },
+    {
+      "title": "SECTION 5",
+      "length": 379
+    },
+    {
+      "title": "SECTION 6",
+      "length": 392
+    },
+    {
+      "title": "IN WITNESS WHEREOF",
+      "length": 78
+    },
+    {
+      "title": "GREENFIELD PROPERTIES LLC HARBORVIEW CAPITAL PARTNERS INC",
+      "length": 207
+    }
+  ]
+}

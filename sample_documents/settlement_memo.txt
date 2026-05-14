@@ -1,0 +1,93 @@
+INTERNAL MEMORANDUM — PRIVILEGED AND CONFIDENTIAL
+
+TO:      Jessica Pearson, Managing Partner
+FROM:    Michael Ross, Associate
+DATE:    March 5, 2024
+RE:      Settlement Negotiations — Donovan v. Meridian Healthcare Systems
+
+SUBJECT: UPDATE ON SETTLEMENT DISCUSSIONS
+
+Dear Ms. Pearson,
+
+This memo provides a status update on the settlement negotiations in
+Donovan v. Meridian Healthcare Systems, Case No. 2023-CV-05891 (S.D.N.Y.).
+
+BACKGROUND
+
+Our client, Meridian Healthcare Systems ("Meridian"), is a defendant in a
+class action lawsuit filed by former employee Angela Donovan on behalf of
+approximately 2,300 current and former employees. The Complaint, filed on
+September 12, 2023, alleges violations of the Fair Labor Standards Act
+("FLSA") and New York Labor Law, specifically:
+
+(1) Failure to pay overtime compensation for hours worked in excess of 40
+    hours per week;
+(2) Improper classification of registered nurses as exempt employees;
+(3) Failure to provide required meal and rest periods.
+
+The putative class includes all non-supervisory registered nurses employed
+by Meridian at its five New York facilities between January 1, 2020 and
+the present.
+
+SETTLEMENT ANALYSIS
+
+Opposing counsel, Rachel Zane of Zane & Associates, has proposed a global
+settlement of $8,500,000.00. Their demand is broken down as follows:
+
+- Back wages:          $5,100,000.00
+- Liquidated damages:  $2,400,000.00
+- Attorney's fees:       $850,000.00
+- Named plaintiff award: $150,000.00
+
+Our analysis suggests the following exposure:
+
+BEST CASE (if we prevail on exemption defense):
+- Total liability: $0
+- Probability: 25%
+
+MODERATE CASE (partial class, limited damages period):
+- Total liability: $3,200,000 - $4,800,000
+- Probability: 45%
+
+WORST CASE (full class certification, all claims):
+- Total liability: $12,000,000 - $15,000,000
+- Probability: 30%
+
+Expected value: approximately $5,400,000.00
+
+RECOMMENDATION
+
+Given the litigation risk profile, I recommend we counter-offer at
+$4,750,000.00, structured as follows:
+
+- Back wages fund:      $2,850,000.00
+- Liquidated damages:   $1,200,000.00
+- Attorney's fees:        $550,000.00
+- Named plaintiff award:  $100,000.00
+- Administrative costs:    $50,000.00
+
+This counter-offer represents approximately 55.8% of opposing counsel's
+demand and is within the range of our moderate-case exposure estimate.
+
+The deadline for responding to the settlement proposal is March 20, 2024.
+
+KEY RISKS
+
+1. Judge Thompson has been favorable to FLSA plaintiffs in recent rulings
+2. Similar cases in this district have resulted in class certification
+   rates of approximately 72%
+3. Meridian's internal audit (conducted by Deloitte in Q4 2023) identified
+   "systemic issues" with time recording for nursing staff — this document
+   could be highly damaging if produced in discovery
+
+NEXT STEPS
+
+1. Schedule partner review meeting by March 10, 2024
+2. Prepare detailed settlement authority memorandum
+3. Coordinate with Meridian's General Counsel, Thomas Hardman, regarding
+   board approval for settlement authority up to $6,000,000
+
+Please advise on how you would like to proceed.
+
+Respectfully,
+Michael Ross

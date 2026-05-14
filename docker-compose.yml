@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - OLLAMA_MODEL=mistral:7b
+      - CHROMA_DB_PATH=/app/data/chroma_db
+      - FEEDBACK_DB_PATH=/app/data/feedback.db
+      - UPLOAD_DIR=/app/data/uploads
+    volumes:
+      - app-data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  app-data:

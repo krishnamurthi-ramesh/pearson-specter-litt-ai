@@ -1,0 +1,71 @@
+{
+  "doc_id": "contract_draft",
+  "draft_type": "case_summary",
+  "draft_text": "## Case Summary — Agreement of Purchase and Sale\n\n**Parties Involved:**\nThis matter concerns an Agreement of Purchase and Sale executed on January 15, 2024, between Greenfield Properties LLC (\"Seller\"), a Delaware limited liability company with offices at 1234 Commerce Drive, Suite 500, Wilmington, DE 19801, and Harborview Capital Partners Inc. (\"Buyer\"), a New York corporation headquartered at 789 Wall Street, 22nd Floor, New York, NY 10005. [Source: contract_draft, p.1]\n\n**Subject of Transaction:**\nThe agreement governs the purchase and sale of real property located at 456 Elm Street, Hartford, CT 06103, legally described in Exhibit A. [Source: contract_draft, p.1]\n\n**Purchase Price & Payment Terms:**\nThe total purchase price is $3,500,000.00. The Buyer is required to deposit $175,000.00 as an Earnest Money Deposit with First National Escrow Company within five (5) business days of the Effective Date. The remaining balance is to be paid via wire transfer of immediately available funds at Closing. [Source: contract_draft, p.1]\n\n**Due Diligence Period:**\nThe Buyer is granted a 45-day Due Diligence Period from the Effective Date to conduct inspections, environmental assessments, and title review. Buyer may terminate the agreement by written notice if a Phase I Environmental Site Assessment reveals Recognized Environmental Conditions. [Source: contract_draft, p.1]\n\n**Closing:**\nClosing is scheduled on or before March 15, 2024, at the offices of the Escrow Agent, unless extended by mutual written agreement. [Source: contract_draft, p.2]\n\n**Default & Remedies:**\nIf Buyer defaults, Seller retains the Deposit as liquidated damages. If Seller defaults, Buyer may seek specific performance or recover the full Deposit. [Source: contract_draft, p.2]\n\n**Governing Law:**\nThe agreement is governed by the laws of the State of Connecticut. [Source: contract_draft, p.2]\n\n**Case Reference:** Case No. 2024-CV-03892",
+  "evidence_used": [
+    {
+      "rank": 1,
+      "doc_id": "contract_draft",
+      "page": 1,
+      "section": "AGREEMENT OF PURCHASE AND SALE",
+      "similarity": 0.9214,
+      "text": "This Agreement of Purchase and Sale is entered into as of January 15, 2024, by and between Greenfield Properties LLC and Harborview Capital Partners Inc..."
+    },
+    {
+      "rank": 2,
+      "doc_id": "contract_draft",
+      "page": 1,
+      "section": "SECTION 1: PURCHASE PRICE AND PAYMENT",
+      "similarity": 0.8971,
+      "text": "The total purchase price for the Property shall be Three Million Five Hundred Thousand Dollars ($3,500,000.00)..."
+    },
+    {
+      "rank": 3,
+      "doc_id": "contract_draft",
+      "page": 1,
+      "section": "SECTION 2: DUE DILIGENCE PERIOD",
+      "similarity": 0.8743,
+      "text": "Buyer shall have a period of forty-five (45) days from the Effective Date within which to conduct its inspections and investigations..."
+    },
+    {
+      "rank": 4,
+      "doc_id": "contract_draft",
+      "page": 2,
+      "section": "SECTION 4: CLOSING",
+      "similarity": 0.8612,
+      "text": "The closing shall take place on or before March 15, 2024, at the offices of the Escrow Agent..."
+    },
+    {
+      "rank": 5,
+      "doc_id": "contract_draft",
+      "page": 2,
+      "section": "SECTION 5: DEFAULT AND REMEDIES",
+      "similarity": 0.8390,
+      "text": "If Buyer defaults under this Agreement, Seller shall be entitled to retain the Deposit as liquidated damages..."
+    }
+  ],
+  "grounding_report": {
+    "overall_grounding_score": 0.887,
+    "total_sentences": 12,
+    "grounded_sentences": 12,
+    "ungrounded_sentences": 0,
+    "threshold": 0.40,
+    "sentence_scores": [
+      {"sentence": "This matter concerns an Agreement of Purchase and Sale executed on January 15, 2024...", "score": 0.9214, "grounded": true},
+      {"sentence": "The total purchase price is $3,500,000.00.", "score": 0.9102, "grounded": true},
+      {"sentence": "The Buyer is required to deposit $175,000.00 as an Earnest Money Deposit...", "score": 0.8971, "grounded": true},
+      {"sentence": "The Buyer is granted a 45-day Due Diligence Period...", "score": 0.8743, "grounded": true},
+      {"sentence": "Closing is scheduled on or before March 15, 2024...", "score": 0.8612, "grounded": true}
+    ]
+  },
+  "agentic_self_correction_applied": false,
+  "agentic_remediation_logs": [],
+  "feedback_applied": false,
+  "generation_metadata": {
+    "model": "mistral:7b (Ollama local)",
+    "temperature": 0.3,
+    "draft_template": "case_summary",
+    "evidence_chunks_used": 5,
+    "feedback_patterns_injected": 0
+  }
+}

@@ -1,0 +1,104 @@
+UNITED STATES DISTRICT COURT
+SOUTHERN DISTRICT OF NEW YORK
+
+Case No. 2024-CV-01547
+
+METROPOLITAN TRANSIT AUTHORITY,
+    Plaintiff,
+
+v.
+
+TRISTATE CONSTRUCTION GROUP, INC.,
+    Defendant.
+
+MEMORANDUM OF LAW IN SUPPORT OF MOTION FOR SUMMARY JUDGMENT
+
+TO: The Honorable Judge Patricia M. Williams
+
+STATEMENT OF FACTS
+
+1. On or about June 3, 2022, Plaintiff Metropolitan Transit Authority
+("MTA") entered into Contract No. MTA-2022-0789 with Defendant TriState
+Construction Group, Inc. ("TriState") for the renovation of the Grand
+Central Terminal underground concourse (the "Project").
+
+2. The total contract value was Twenty-Seven Million Dollars ($27,000,000.00),
+with an expected completion date of December 31, 2023.
+
+3. TriState commenced work on August 1, 2022, and was required to maintain
+a construction schedule approved by MTA's Project Manager, James T.
+Richardson.
+
+4. Between September 2022 and March 2023, TriState submitted seven (7)
+change order requests totaling $4,200,000.00. MTA approved three (3)
+change orders totaling $1,850,000.00 and denied four (4) change orders
+totaling $2,350,000.00.
+
+5. On April 15, 2023, MTA's independent inspector, Chen Engineering
+Associates, issued a deficiency report identifying thirty-two (32)
+instances of non-conforming work, including:
+   (a) Improper installation of fire-rated wall assemblies in Zones B
+       and D;
+   (b) Failure to meet ADA accessibility requirements at six (6)
+       passenger access points;
+   (c) Use of non-specified concrete mix in structural support columns.
+
+6. Despite receiving written notice of these deficiencies on April 20, 2023
+(MTA Letter No. 2023-0420), TriState failed to cure the deficiencies
+within the sixty (60) day cure period specified in Section 12.3 of the
+Contract.
+
+7. On July 1, 2023, MTA issued a Notice of Default (MTA Letter No.
+2023-0701) and subsequently terminated the Contract for cause on
+August 15, 2023.
+
+8. As of the date of termination, only 47% of the Project work had been
+completed, and MTA had made progress payments totaling $14,300,000.00
+to TriState.
+
+9. MTA subsequently entered into a replacement contract with Atlas
+Infrastructure Corp. for $18,500,000.00 to complete the remaining work.
+
+ARGUMENT
+
+I. TRISTATE BREACHED THE CONTRACT BY FAILING TO PERFORM CONFORMING WORK
+
+TriState's failure to perform work in accordance with the Contract
+specifications constitutes a material breach. The thirty-two (32)
+deficiencies identified by Chen Engineering Associates demonstrate a
+pattern of non-conforming work that goes to the essence of the Contract.
+
+II. MTA PROPERLY TERMINATED THE CONTRACT FOR CAUSE
+
+Section 12.3 of the Contract provides that MTA may terminate for cause
+if the contractor fails to cure material deficiencies within sixty (60)
+days of written notice. TriState received notice on April 20, 2023, and
+failed to cure by the June 19, 2023 deadline.
+
+III. MTA IS ENTITLED TO DAMAGES
+
+MTA seeks damages in the amount of $5,500,000.00, calculated as follows:
+   - Replacement contract premium: $18,500,000.00 - $12,700,000.00
+     (remaining contract value) = $5,800,000.00
+   - Less: Retained funds of $300,000.00
+   - Total damages: $5,500,000.00
+
+CONCLUSION
+
+For the foregoing reasons, Plaintiff respectfully requests that this
+Court grant summary judgment in favor of MTA and against TriState in
+the amount of $5,500,000.00, plus prejudgment interest and costs.
+
+Respectfully submitted,
+
+WILSON & ASSOCIATES LLP
+
+By: ________________________
+    David R. Wilson, Esq.
+    New York Bar No. 4829173
+    350 Madison Avenue, 15th Floor
+    New York, NY 10017
+    Tel: (212) 555-8900
+    dwilson@wilsonlaw.com
+
+Dated: February 10, 2024
