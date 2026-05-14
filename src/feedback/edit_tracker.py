@@ -12,7 +12,7 @@ import json
 import sqlite3
 import difflib
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 logger = logging.getLogger(__name__)
@@ -152,7 +152,7 @@ def save_edit(
             edited_text,
             json.dumps(diff),
             json.dumps(stats),
-            datetime.utcnow().isoformat(),
+            datetime.now(timezone.utc).isoformat(),
         ),
     )
     conn.commit()

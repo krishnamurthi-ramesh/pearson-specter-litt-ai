@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   app:
     build: .
@@ -8,13 +6,23 @@ services:
     environment:
       - OLLAMA_HOST=http://host.docker.internal:11434
       - OLLAMA_MODEL=mistral:7b
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
       - CHROMA_DB_PATH=/app/data/chroma_db
       - FEEDBACK_DB_PATH=/app/data/feedback.db
       - UPLOAD_DIR=/app/data/uploads
+      # Tesseract is installed in the container at the default Linux path
+      - TESSERACT_CMD=/usr/bin/tesseract
     volumes:
       - app-data:/app/data
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
 
 volumes:
   app-data:

@@ -10,7 +10,7 @@ import os
 import json
 import shutil
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
@@ -72,7 +72,7 @@ class DiffRequest(BaseModel):
 def health():
     return {
         "status": "healthy",
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "vector_store_count": _get_vs().count(),
     }
 

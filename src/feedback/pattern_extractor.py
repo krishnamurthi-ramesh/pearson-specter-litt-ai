@@ -16,7 +16,7 @@ import json
 import re
 import logging
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 from .edit_tracker import get_edits, _get_db
@@ -192,7 +192,7 @@ def extract_patterns(
 def _save_patterns(patterns: list[dict], db_path: str | None = None):
     """Upsert patterns into the learned_patterns table."""
     conn = _get_db(db_path)
-    now = datetime.utcnow().isoformat()
+    now = datetime.now(timezone.utc).isoformat()
 
     for p in patterns:
         # Check if a similar pattern already exists

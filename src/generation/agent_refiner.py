@@ -39,9 +39,9 @@ def run_self_correction(
     
     # Isolate sentences falling below critical thresholds (e.g., 40%)
     critical_sentences = []
-    for i, sent_score in enumerate(grounding_report.get("sentence_scores", [])):
-        if sent_score.get("score", 1.0) < 0.40:
-            critical_sentences.append(sent_score.get("sentence", ""))
+    for sent_detail in grounding_report.get("sentence_details", []):
+        if sent_detail.get("similarity", 1.0) < 0.40:
+            critical_sentences.append(sent_detail.get("sentence", ""))
 
     if not critical_sentences:
         logger.info("No critical hallucinations identified. Self-correction bypassed.")

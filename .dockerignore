@@ -1,0 +1,40 @@
+# Python runtime
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Secrets & local config
+.env
+*.db
+*.sqlite
+
+# Runtime data (mounted as Docker volume)
+data/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Dev/evaluation scripts not needed in container
+evaluate_benchmark.py
+evaluate_research_standards.py
+profile_performance.py
+generate_pdf_report.py
+read_pdf_content.py

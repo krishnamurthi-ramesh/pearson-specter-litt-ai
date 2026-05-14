@@ -10,7 +10,7 @@ from __future__ import annotations
 import os
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 logger = logging.getLogger(__name__)
@@ -127,6 +127,6 @@ def generate_draft(
             }
             for e in evidence
         ],
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "model": model or os.getenv("OLLAMA_MODEL", "mistral:7b"),
     }
