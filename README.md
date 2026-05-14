@@ -49,31 +49,8 @@ The **Pearson Specter Litt Document Intelligence System** is a production-grade 
 
 ## System Architecture
 
-```
-Documents (PDF / Image / Text)
-        │
-        ▼
-┌─────────────────────┐      ┌──────────────────────┐      ┌───────────────────┐
-│  1. Document         │─────▶│  2. Retrieval         │─────▶│  3. Draft          │
-│     Processing       │      │     & Grounding       │      │     Generation     │
-│  (OCR + Extract)     │      │  (ChromaDB RAG)       │      │  (Ollama LLM)      │
-└─────────────────────┘      └──────────────────────┘      └────────┬──────────┘
-                                                                     │
-                                                                     ▼
-                                                           ┌──────────────────────┐
-                                                           │  Grounding Verifier  │
-                                                           │  + Agentic Self-     │
-                                                           │    Correction Loop   │
-                                                           └────────┬─────────────┘
-                                                                    │
-                                                                    ▼
-                                                           ┌──────────────────────┐
-                                                           │  4. Operator Review  │
-                                                           │  → Edit Tracker      │
-                                                           │  → Pattern Learner   │
-                                                           │  → Future Prompts    │
-                                                           └──────────────────────┘
-```
+<img width="1432" height="827" alt="image" src="https://github.com/user-attachments/assets/41c7742a-4330-453b-ad58-08cab246d1a7" />
+
 
 **Technology Stack:**
 
@@ -397,47 +374,6 @@ Pre-generated outputs from running the full pipeline on `contract_draft.txt` —
 | `draft_case_summary.json` | Full generated case summary with `[Source: doc_id, p.N]` citations, grounding score per sentence, evidence used |
 | `retrieval_results.json` | Top-5 semantic search results for a sample query, each with doc ID, page, section, and similarity score |
 | `learned_patterns.json` | Two patterns extracted after 3 operator edit cycles: terminology (`claimant→plaintiff`) and addition (privilege disclaimer) |
-
----
-
-## Evaluation Approach
-
-### Document Processing (25 pts)
-- Tested with 3 synthetic legal text documents and 1 scanned image
-- OCR fallback triggered automatically when native extraction yields `< 50 chars/page`
-- Structured extraction accuracy verified against known entities in sample documents
-- Quality score (`0.0–1.0`) based on alpha-character density and garbage-character ratio
-
-### Retrieval & Grounding (25 pts)
-- Semantic search verified: most relevant chunks rank highest for targeted queries
-- Every result carries full provenance: `doc_id`, `page`, `section`, `similarity_score`
-- Grounding verifier embeds each draft sentence and measures cosine similarity against all evidence chunks
-- Sentences below threshold `0.45` are flagged and passed to the agentic self-correction loop
-
-### Draft Quality (10 pts)
-- Three draft types: `case_summary`, `internal_memo`, `document_checklist`
-- Each draft includes `[Source: doc_id, p.N]` citations
-- Anti-hallucination enforced at two levels: system prompt constraints + post-generation grounding check
-
-### Improvement from Edits (25 pts)
-- Operator edits stored with full structured diff (additions, deletions, modifications, change ratio)
-- Pattern extraction runs on every edit submission — frequency-gated at `≥ 2 occurrences`
-- Five pattern categories: `addition`, `deletion`, `terminology`, `tone`, `structure`
-- Learned patterns injected as natural-language directives into next generation prompt
-- Improvement measurable: `avg_change_ratio` should decrease as patterns are applied
-
-### Code Quality & System Design (10 pts)
-- Modular 4-layer architecture: processor → retrieval → generation → feedback
-- Custom exception hierarchy (`PSLError`, `IngestionError`, `InferenceError`, etc.)
-- Pydantic V2 typed configuration (`AppSettings`) with `.env` file support
-- GitHub Actions CI pipeline runs all 40 tests on every push to `main`
-- Docker deployment with health check and named volume persistence
-
-### Documentation (5 pts)
-- `README.md` — setup, API reference, architecture, evaluation
-- `ARCHITECTURE.md` — detailed pipeline diagrams and design decisions
-- `WRITEUP.md` — assumptions, tradeoffs, and what would improve with more time
-- `TECHNICAL_REPORT.md` — full technical report with subsystem specs and metrics
 
 ---
 
